@@ -30,6 +30,7 @@ Make .env file
   from = "from-email@gmail.com"
   password = "your-google-app-password"
 ```
+**see how to create google app password: https://www.youtube.com/watch?v=lSURGX0JHbA**
 
 - Add details of the clients emails in data.csv file
 
