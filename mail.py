@@ -58,13 +58,13 @@ def send_email(subject):
             msg.add_alternative(body.format(data = html.format(FirstName = fn, LastName = ln)),subtype="html",)
             try:
                 server.sendmail(froom, mail, msg.as_string())
-                # print(no, fn, ln, mail)
+                print(no, fn, ln, mail)
                 sent_list.append(list((no, fn, ln, mail, "Sent")))
             except Exception as e:
-                # print(no, fn, ln, mail, f"Error: {e}")
+                print(no, fn, ln, mail, f"Error: {e}")
                 sent_list.append(list((no, fn, ln, mail, f"Error: {e}")))
     server.quit()
-    # print(sent_list)
+    print(sent_list)
     create_response()
 
 send_email("Demo Email")
